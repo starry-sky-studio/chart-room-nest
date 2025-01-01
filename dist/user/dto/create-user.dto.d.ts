@@ -1,7 +1,7 @@
 export declare class CreateUserDto {
     username: string;
-    password: string;
     nickName: string;
+    password: string;
     email: string;
     captcha: string;
 }

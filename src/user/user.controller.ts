@@ -14,6 +14,7 @@ export class UserController {
 
   @Post('signup')
   async register(@Body() registerUser: CreateUserDto) {
+    console.log(registerUser, '1')
     return await this.userService.create(registerUser)
   }
 

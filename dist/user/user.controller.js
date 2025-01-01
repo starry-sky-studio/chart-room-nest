@@ -25,6 +25,7 @@ let UserController = class UserController {
         return this.userService.create(createUserDto);
     }
     async register(registerUser) {
+        console.log(registerUser, '1');
         return await this.userService.create(registerUser);
     }
     findAll() {
